@@ -1,9 +1,12 @@
 package com.example.quiz;
+
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -11,7 +14,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-     TextView text;
+    TextView text;
      Question[] questions = new Question[5];
      int[] b1answers ;
      int[] b2answers;
@@ -19,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
      int[] b3answers;
      int trueanswers;
      int currentindex ;
+
         protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
@@ -40,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
                     R.string.wrong1Answer_Brazil,
                     R.string.answer_France,
                     R.string.wrong3Answer_India
+
             };
             b2answers = new int[]{
                     R.string.answer_Armenia,
@@ -61,6 +66,8 @@ public class MainActivity extends AppCompatActivity {
                     R.string.wrong2Answer_Brazil,
                     R.string.wrong1Answer_France,
                     R.string.answer_India
+
+
             };
             currentindex =0;
             trueanswers  = 0;
@@ -79,17 +86,22 @@ public class MainActivity extends AppCompatActivity {
                 public void onClick(View v) {
                     if(a1.getText().equals(questions[currentindex].getAnswer())){
                         trueanswers+=1;
-                        Toast.makeText(getBaseContext(),R.string.right_answer,Toast.LENGTH_SHORT).show();
                         currentindex+=1;
                     }
                     else {
-                        Toast.makeText(getBaseContext(), R.string.wrong_answer, Toast.LENGTH_SHORT).show();
                         currentindex += 1;
                     }
+
                     if(currentindex == questions.length){
-                        Toast.makeText(getBaseContext(),trueanswers+"/5",Toast.LENGTH_SHORT).show();
+
+                        a1.setVisibility(a1.GONE);
+                        a2.setVisibility(a2.GONE);
+                        a3.setVisibility(a3.GONE);
+                        a4.setVisibility(a4.GONE);
+                        text.setText(trueanswers+"/5");
                     }
                     else{
+
                         Question question = questions[0];
                         text.setText(question.getQuestion());
                         updateQuestion();
@@ -105,15 +117,20 @@ public class MainActivity extends AppCompatActivity {
                 public void onClick(View v) {
                     if(a2.getText().equals(questions[currentindex].getAnswer())){
                         trueanswers+=1;
-                        Toast.makeText(getBaseContext(),R.string.right_answer,Toast.LENGTH_SHORT).show();
                         currentindex+=1;
                     }
                     else {
-                        Toast.makeText(getBaseContext(), R.string.wrong_answer, Toast.LENGTH_SHORT).show();
+
                         currentindex += 1;
                     }
+
                     if(currentindex == questions.length){
-                        Toast.makeText(getBaseContext(),trueanswers+"/5",Toast.LENGTH_SHORT).show();
+
+                        a1.setVisibility(a1.GONE);
+                        a2.setVisibility(a2.GONE);
+                        a3.setVisibility(a3.GONE);
+                        a4.setVisibility(a4.GONE);
+                        text.setText(trueanswers+"/5");
                     }
                     else{
                         Question question = questions[0];
@@ -131,15 +148,20 @@ public class MainActivity extends AppCompatActivity {
                 public void onClick(View v) {
                     if(a3.getText().equals(questions[currentindex].getAnswer())){
                         trueanswers+=1;
-                        Toast.makeText(getBaseContext(),R.string.right_answer,Toast.LENGTH_SHORT).show();
+
                         currentindex+=1;
                     }
                     else {
-                        Toast.makeText(getBaseContext(), R.string.wrong_answer, Toast.LENGTH_SHORT).show();
+
                         currentindex += 1;
                     }
                     if(currentindex == questions.length){
-                        Toast.makeText(getBaseContext(),trueanswers+"/5",Toast.LENGTH_SHORT).show();
+
+                        a1.setVisibility(a1.GONE);
+                        a2.setVisibility(a2.GONE);
+                        a3.setVisibility(a3.GONE);
+                        a4.setVisibility(a4.GONE);
+                        text.setText(trueanswers+"/5");
                     }
                     else{
                         Question question = questions[0];
@@ -157,15 +179,19 @@ public class MainActivity extends AppCompatActivity {
                 public void onClick(View v) {
                     if(a4.getText().equals(questions[currentindex].getAnswer())){
                         trueanswers+=1;
-                        Toast.makeText(getBaseContext(),R.string.right_answer,Toast.LENGTH_SHORT).show();
+
                         currentindex+=1;
                     }
                     else {
-                        Toast.makeText(getBaseContext(), R.string.wrong_answer, Toast.LENGTH_SHORT).show();
+
                         currentindex += 1;
                     }
                     if(currentindex == questions.length){
-                        Toast.makeText(getBaseContext(),trueanswers+"/5",Toast.LENGTH_SHORT).show();
+                        a1.setVisibility(a1.GONE);
+                        a2.setVisibility(a2.GONE);
+                        a3.setVisibility(a3.GONE);
+                        a4.setVisibility(a4.GONE);
+                        text.setText(trueanswers+"/5");
                     }
                     else{
                         Question question = questions[0];
