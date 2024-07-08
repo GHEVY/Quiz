@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Quiz</string>
+    <string name="right_answer">Thats right </string>
+    <string name="wrong_answer">Thats wrong </string>
+    <string name="question_Armenia">Which city is capital  of Armenia</string>
+    <string name="answer_Armenia">Erevan</string>
+    <string name="wrong1Answer_Armenia">Gyumri</string>
+    <string name="wrong2Answer_Armenia">Vanadzor</string>
+    <string name="wrong3Answer_Armenia">Ani</string>
+    <string name="question_Japan">Which city is capital  of Japan</string>
+    <string name="answer_Japan">Tokyo</string>
+    <string name="wrong1Answer_Japan">Kyoto</string>
+    <string name="wrong2Answer_Japan">Seul</string>
+    <string name="wrong3Answer_Japan">Yokohama</string>
+    <string name="question_Brazil">Which city is the capital of Brazil?</string>
+    <string name="answer_Brazil">Brasilia</string>
+    <string name="wrong1Answer_Brazil">Rio de Janeiro</string>
+    <string name="wrong2Answer_Brazil">Salvador</string>
+    <string name="wrong3Answer_Brazil">Sao Paulo</string>
+    <string name="question_France">Which city is the capital  of France?</string>
+    <string name="answer_France">Paris</string>
+    <string name="wrong1Answer_France">Marseille</string>
+    <string name="wrong2Answer_France">Lyon</string>
+    <string name="wrong3Answer_France">Lille</string>
+    <string name="question_India">Which city is the capital  of India?</string>
+    <string name="answer_India">New Delhi</string>
+    <string name="wrong1Answer_India">Mumbai</string>
+    <string name="wrong2Answer_India">Delhi</string>
+    <string name="wrong3Answer_India">Pune</string>
+
+
+</resources>
