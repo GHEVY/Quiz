@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
                     R.string.answer_France,
                     R.string.wrong3Answer_India
 
+
             };
             b2answers = new int[]{
                     R.string.answer_Armenia,
